@@ -1,0 +1,37 @@
+import colorama
+import random
+x = "> %s |The value of your code is:"
+y = (round(random.uniform(.011000, 0.0010), 6))
+z = "BTC"
+Password = "cum"
+password = ""
+while (password != Password):
+    print ("> %s |Enter key here:")
+    password = input().lower()
+    if password == "cum":
+      print ("> %s |Welcome to WalletminerV2.32 Made by ben#0898 on discord.")
+import string, random, time
+from colorama import Fore, init
+init()
+def main():
+    address=input("> %s |Enter your BTC adress: ")
+    print(Fore.YELLOW + "> %s |Connecting to server...")
+    time.sleep(5)
+    print(Fore.YELLOW + "> %s |Checking adress...")
+    time.sleep(5)
+    print(Fore.GREEN + "> %s |Accepted, starting the bot. ")
+    time.sleep(2.5)
+    characters=string.ascii_lowercase+string.digits
+    for _ in range(random.randint(1000, 100000)):
+        print(Fore.RED + "> %s | 0.00000 BTC" % "". join(random.sample(characters, 32)))
+    time.sleep(0.5)
+    print(Fore.GREEN + "> %s |Valid code found!" % "".join(random.sample(characters, 32)))
+    time.sleep(1.5)
+    print(Fore.WHITE + "> %s |Checking value...")
+    time.sleep(5)
+    print(x, y, z)
+    print(Fore.WHITE + "> %s |Transfering to your wallet...")
+    time.sleep(5)
+    print(Fore.WHITE + "> %s |Transfer complete! Start program again to restart the bot!.")
+    input()
+main()
